@@ -1,0 +1,111 @@
+/* Live Chat */
+
+#send_message { display: none; }
+
+#typing {
+	margin-top: 227px;
+	position: absolute;
+	margin-left: 15px;
+}
+
+@media (max-width: 991px) {
+	#typing {
+		margin-top: -42px;
+		position: absolute;
+		margin-left: 15px;
+	}
+}
+
+
+.livechatBox {
+    position: relative;
+    background: #262626;
+    padding: 25px;
+}
+
+.livechatBox input[type=text] {
+    font-size: 16px;
+    border-radius: 0px;
+    padding: 15px;
+    color: #fff;
+    border: 2px solid #444;
+    background: #262626;
+    font: inherit;
+    box-shadow: 0;
+}
+.livechatBox input[type=text]:focus {
+    outline: 0;
+    box-shadow: 0;
+    border: 2px solid #F19F00;
+}
+
+.livechatBox button {
+    border-radius: 0px;
+    background: url(../img/tabs-bg.png) repeat-x;
+    color: #262626;
+    font: inherit;
+    padding: 11px;
+    border: none;
+    text-transform: uppercase;
+    padding: 13px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.livechatBox button:focus, .livechatBox button:hover, .livechatBox button:active:hover, .livechatBox button:active {
+    border-radius: 0px;
+    background: url(../img/tabs-bg.png) repeat-x;
+    color: #262626;
+    font: inherit;
+    padding: 11px;
+    border: none;
+    text-transform: uppercase;
+    padding: 13px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.livechatBox .heading h3 {
+    text-align: center;
+    margin: 0 0 15px 0;
+    padding: 0;
+    color: #FFF;
+}
+.chat-response-msg {
+	background: #FAF2D9;
+	color: #000;
+}
+.livechatBox .livechatListArea {
+    text-align: left;
+    height: 250px;
+    overflow-y: scroll;
+    padding: 15px 0 15px 0;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    margin-bottom: 20px
+}
+.livechatBox .livechatListArea .chatList {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.livechatBox .livechatListArea .chatList li {
+    margin: 5px auto
+}
+.livechatBox .livechatListArea .chatList li .name {
+    font-weight: 800
+}
+@media (max-width: 991px) {
+    .livechatBox .livechatListArea .chatList {
+        text-align: left
+    }
+}
+.livechatBox .livechatMsg {
+    width: 100%;
+    padding: 5px
+}
+@media (max-width: 991px) {
+    .livechatBox .livechatSubmtBtn {
+        margin-top: 5px
+    }
+}
